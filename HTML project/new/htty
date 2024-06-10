@@ -1,0 +1,124 @@
+  .input {
+    visibility: hidden;
+  }
+  
+  .label {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 30px;
+    cursor: pointer;
+    
+  }
+  
+  .circle {
+    width: 24px;
+    background-color: white;
+    height: 24px;
+    border-radius: 20px;
+    top: 3px;
+    position: absolute;
+    left: 3px;
+    animation: toggleOff 0.4s linear forwards;
+ 
+  }
+  
+  .input:checked + .label {
+    background-color: white;
+  }
+  
+  .input:checked + .label .circle { 
+    animation: toggleOn 0.4s linear forwards;
+    background-color: black;
+  }
+  .input:checked + .about .about-content {
+    background-color: white;
+  }
+
+
+  @keyframes toggleOn {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(40px);
+    }
+  }
+  
+  @keyframes toggleOff {
+    0% {
+      transform: translateX(40px);
+    }
+    100% {
+      transform: translateX(0);
+    }}
+     div>:input type="checkbox" id="dark-mode" class="input" />
+     <label for="dark-mode" class="label">
+      <div class="circle"></div>
+     </label>
+   
+    <script src="index.js"></script>
+     </div>
+     <section id="about" class="about">
+     <div class="about-content">
+         <div  class="pic2">
+             <img src="pic2.png" alt="">
+            </div>
+            <div class="row2">             
+             <h1 class="sub-title">About Me</h1>
+             <p>
+                 I am a web developer by the name SHITTU QAIS AYOMIDE, i am highly motivated<br>
+                 and detailed-oriented web developer with 5+ years experience in biulding <br>
+                 responsive, user-friendly, and scalable web applications. Proficient in range<br> 
+                 of programming languages, including JavaScript,HTML, CSS, and PHP, with expertise in <br>
+                 web frameworks like Reacts,Angular, and Vue.js. Strong understanding of database<br>
+                 manage ment systems, including MYSQL,MongoDB, and PostgreSQL.<br>
+             </p>
+             <script src="index.js"></script>
+            </div>
+         
+     </div>
+ </section>
+
+
+
+
+
+ .about {
+  text-align: center;
+  background-color:#333;
+  background-size: cover;
+  margin-top: none;
+}
+.about-content{
+  color:black;
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap ;
+
+}
+.pic2{
+flex-basis: 30%;
+padding-left: 40px;
+}
+.pic2 img{
+  width: 100%;
+  border-radius: 15px;
+  background-color: #3333331f;
+  height: 400px;
+  width: 300px;
+}
+.row2{
+  flex-basis:60%;
+  margin-right: 90px;
+  text-align: left;
+  color: white;
+}
+.sub-title{
+  font-size:40px ;
+  font-weight:400;
+  color: #333;
+  margin-right: 550px;
+  color: #fff;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="pro1.css">
+</head>
+<body>
+    <nav> 
+       <div class="navig">
+        <div class="log">
+            <img src="C:\Users\QAIS\Desktop\HTML project\new\logo2.png" alt="" class="logo">
+        </div>
+        <div class="nave">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-bars"></i>
+        </div>                    
+       </div>
+    </nav>
+    <div class="firstdiv"><h1><b><u>WELCOME TO MY PORTFOLIO!</u></b></h1></div>
+    <section id="home" class="homesection">
+       
+        <marquee behavior="alternate" direction="right">
+            <div class="homecontent">
+                <p class="tex">Hi,I am<br><span class="name">Shittu Qais</span></p>
+               <div class="welpic">
+                
+                <div class="wel"> <h1>Front-end Developer</h1><hr></div>
+              
+                <div class="picweldiv"> 
+                <img src="C:\Users\QAIS\Desktop\HTML project\new\portfolio-pic2.jpg" class="picwel"></div></marquee>        
+               </div>            
+                <div class="text">
+                    <h5><p>My name is Qais Shittu,I am a dedicated web developer.
+                        I work with several <br>programming tools to
+                        deliver quality results to clients. I have expert 
+                        knowlegde<br> in front-end developing, software testing 
+                        and web delopments.
+                </p></h4>
+
+                </div>
+                <div><a href=""><i class="fa-brands fa-facebook"></i></a></i>
+                </div>
+                
+             
+        </marquee>
+        </div>
+    </section>
+       <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\QAIS\Desktop\HTML project\new\aboutpic.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        I am a web developer by the name SHITTU QAIS AYOMIDE, i am highly motivated<br>
+                        and detailed-oriented web developer with 5+ years experience in biulding <br>
+                        responsive, user-friendly, and scalable web applications. Proficient in range<br> 
+                        of programming languages, including JavaScript,HTML, CSS, and PHP, with expertise in <br>
+                        web frameworks like Reacts,Angular, and Vue.js. Strong understanding of database<br>
+                        manage ment systems, including MYSQL,MongoDB, and PostgreSQL.<br>
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>                  
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App</li>
+                            <li><span>Web Development</span><br>Web app Deveopment</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training
+                            at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2016 - 2017</span><br>Internship at 
+                                ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Designing Web/App</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+              
+        </div>
+
+
+       </section>
+       <section id="projects" class="projects">
+        <h2>My Project</h2>
+        <div class="Project-grid">
+           <div class="stopwatch">
+            <a class="project-content" href="C:\Users\QAIS\Desktop\HTML project\sub-project1\project1.html">
+                <div></div>
+                <img src="C:\Users\QAIS\Desktop\HTML project\new\pro 2 ss.png" class="projectimg">
+                <h4>Simple Stop Watch</h4>
+            </a>
+           </div>
+            <div class="calculator">
+                <a class="project-content" href="C:\Users\QAIS\Desktop\HTML project\sub-project2\project2.html">
+                    <div></div>
+                    <img src="C:\Users\QAIS\Desktop\HTML project\new\Calculator.jpg" class="projectimg ">
+                    <h4>calculator</h4>
+                </a>
+            </div>
+           <div class="tempconv">
+            <a class="project-content" href="C:\Users\QAIS\Desktop\HTML project\sub-project3\project3.html">
+                <div></div>
+                <img src="C:\Users\QAIS\Desktop\HTML project\new\tempconverter.jpg"class="projectimg">
+                <h4>Temperature Converter</h4>
+            </a>
+           </div>
+          <button class="viewbut"><a class="view" href="https://www.100jsprojects.com/projects"><h3>View more projects</h3></a></button>
+        </div>
+       </section>
+
+    
+   <section id="contact" class="Contact">
+    <div class="Contact-form">
+        <h2>Contact Me</h2>
+        <form id="Contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Your E-mail" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="sub">Send Message</button>
+        </form>
+    </div>
+
+   </section>
+
+<footer>
+    <div class="copyright">
+        <p>copyright @ Qais Shittu 2024</p>
+
+
+    </div>
+</footer>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
+</script>
+</body>
+</html>
